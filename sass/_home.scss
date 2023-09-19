@@ -1,0 +1,71 @@
+#home {
+  background-color: #000;
+  position: relative;
+
+  video {
+    height: 100%;
+    width: 75%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  #welcome {
+    z-index: 3;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-top: 5rem;
+    h1 {
+      width: 100%;
+
+      img {
+        aspect-ratio: 16/8;
+        width: 100%;
+      }
+    }
+    h2 {
+      color: grey;
+      font-style: italic;
+      text-align: center;
+      font-size: 1.7vw;
+    }
+  }
+
+  .blur {
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    z-index: 1;
+    left: 25%;
+    background: linear-gradient(to right, rgb(0, 0, 0), transparent);
+  }
+}
+
+@media (max-width: 768px) {
+  #home {
+    display: flex;
+    justify-content: center;
+    #welcome {
+      width: 75%;
+      padding: 3rem 0 0 0;
+
+      h2 {
+        font-size: 3vw;
+      }
+    }
+
+    video {
+      width: 100%;
+      filter: brightness(40%);
+    }
+
+    div {
+      display: none;
+    }
+  }
+}
