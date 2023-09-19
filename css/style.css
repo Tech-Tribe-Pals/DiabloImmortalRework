@@ -4,6 +4,10 @@
   box-sizing: 0;
 }
 
+body {
+  background-color: #000;
+}
+
 section {
   height: 80vh;
   width: 100%;
@@ -124,6 +128,7 @@ header nav ul li img {
 
 @media (max-width: 768px) {
   #home {
+    height: 100svh;
     display: flex;
     justify-content: center;
   }
@@ -143,6 +148,8 @@ header nav ul li img {
   }
 }
 #story {
+  height: auto;
+  margin-top: 5rem;
   background-color: rgb(0, 0, 0);
   display: flex;
   align-items: center;
@@ -190,9 +197,6 @@ header nav ul li img {
 }
 
 @media (max-width: 1626px) {
-  #story {
-    height: auto;
-  }
   #story figure #container {
     flex-direction: column !important;
     padding: 1rem;
@@ -205,12 +209,99 @@ header nav ul li img {
   }
 }
 @media (max-width: 768px) {
-  #story figure .mobile {
+  #story {
+    margin-top: 0;
+    height: 100svh;
+  }
+  #story figure {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
     display: flex;
-    background-color: red;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #story figure #container {
+    height: 70%;
+    margin-top: 4rem;
+  }
+  #story figure .mobile {
+    height: 10%;
+    display: flex;
+    align-items: center !important;
     justify-content: space-between;
     padding: 0 1rem;
   }
+}
+#buildSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-image: url("../img/bgBuild.webp");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#buildSection #class {
+  background-color: rgba(0, 0, 0, 0.288);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#buildSection #class img {
+  object-fit: cover;
+}
+#buildSection #class article {
+  color: white;
+  margin-right: 5rem;
+  height: 50%;
+  width: 25%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: start;
+}
+#buildSection #class article .descriptionClass {
+  height: 30%;
+  width: 100%;
+}
+#buildSection #class article .containerMedia {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50%;
+  width: 100%;
+}
+#buildSection #class article .containerMedia video {
+  aspect-ratio: 16/8;
+  height: 100px;
+}
+#buildSection #class article .containerMedia .containerStat {
+  display: flex;
+  flex-flow: column;
+}
+#buildSection #btnClass {
+  position: absolute;
+  right: 7%;
+  bottom: 1%;
+  display: flex;
+  align-items: center;
+  gap: 0px 12px;
+}
+#buildSection #btnClass button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  aspect-ratio: 16/8;
+  width: 50px;
+}
+#buildSection #btnClass button img {
+  height: 50px;
+  width: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

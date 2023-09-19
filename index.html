@@ -7,8 +7,8 @@
       name="description"
       content="Explore the world of Diablo Immortal with our powerful character builds and delve into the dark and captivating lore of the game. Get ready for battle and download Diablo Immortal now to join the fight against demonic forces!"
     />
-
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preload" as="style" href="css/style.css" />
     <title>Diablo Immortal</title>
   </head>
   <body>
@@ -44,9 +44,7 @@
 
     <section id="home">
       <video autoplay loop muted>
-        <source
-          src="./videos/homeBackground.mp4"
-        />
+        <source src="./videos/homeBackground.mp4" />
         <track
           src="captions_en.vtt"
           kind="captions"
@@ -72,43 +70,23 @@
       </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <section id="story">
       <video muted autoplay loop src="./videos/background_build.mp4"></video>
-        <h2 class="story">story</h2>
-      <figure >
-          <div id="container"></div>
+      <h2 class="story">story</h2>
+      <figure>
+        <div id="container"></div>
         <div class="mobile">
-        <button id="atras">atras</button>
-        <button id="adelante">adelante</button>
+          <button id="atras">atras</button>
+          <button id="adelante">adelante</button>
         </div>
-
       </figure>
-
-    
-
-
-
-
     </section>
 
+    <section id="buildSection">
+      <article class="class" id="class"></article>
+      <nav id="btnClass"></nav>
+      <div id="build"></div>
+    </section>
 
     <script src="./js/main.js" type="module"></script>
   </body>

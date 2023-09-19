@@ -1,5 +1,3 @@
-
-
 const containerStory = document.getElementById("container");
 const atras = document.getElementById("atras");
 const adelante = document.getElementById("adelante");
